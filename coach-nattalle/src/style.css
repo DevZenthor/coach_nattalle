@@ -25,3 +25,22 @@ section{
   text-shadow:2px 2px 10px rgba(0,0,0,0.3);
   background:transparent;
 }
+
+/* MOBILE */
+
+@media (max-width: 768px){
+
+  section{
+    padding:40px 20px;
+    font-size:28px;
+  }
+
+}
+
+
+
+* {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;
+}
