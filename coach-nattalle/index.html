@@ -1,16 +1,67 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>coach-nattalle</title>
-    <link rel="stylesheet" href="./src/index.css" />
-    <script type="module" src="/src/my-element.js"></script>
-  </head>
-  <body>
-    <my-element>
-      <h1>Vite + Lit</h1>
-    </my-element>
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartoon Site</title>
+
+<style>
+
+html,body{
+  margin:0;
+  padding:0;
+  scroll-behavior:smooth;
+  font-family:sans-serif;
+}
+
+/* background global */
+
+cartoon-background{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+}
+
+/* sections */
+
+section{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:40px;
+  color:white;
+  text-shadow:2px 2px 10px rgba(0,0,0,0.3);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<cartoon-background></cartoon-background>
+
+<cartoon-navbar></cartoon-navbar>
+
+<section id="home">
+  <h1>Home</h1>
+</section>
+
+<section id="reseaux">
+  <h1>Réseaux</h1>
+</section>
+
+<section id="experience">
+  <h1>Experience</h1>
+</section>
+
+<section id="collaboration">
+  <h1>Collaboration</h1>
+</section>
+
+<script type="module" src="/src/main.js"></script>
+
+</body>
 </html>
