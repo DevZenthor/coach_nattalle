@@ -8,7 +8,7 @@ export class CartoonNavbar extends LitElement {
       position:fixed;
       top:0;
       width:100%;
-      z-index:10;
+      z-index:100;
     }
 
     nav{
@@ -17,35 +17,69 @@ export class CartoonNavbar extends LitElement {
       gap:40px;
       padding:20px;
       backdrop-filter:blur(10px);
-      background:rgba(255,255,255,0.15);
+      background:rgba(255,255,255,0.1);
     }
 
     button{
       background:none;
       border:none;
+      font-size:20px;
+      font-weight:700;
       color:white;
-      font-size:18px;
       cursor:pointer;
+      transition:transform 0.2s;
     }
 
     button:hover{
+
       transform:scale(1.1);
+
+      background: linear-gradient(
+        90deg,
+        #ffffff,
+        #ffd700,
+        #ff7bff,
+        #ffffff
+      );
+
+      background-size:300%;
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+
+      animation:shine 6s linear infinite;
+    }
+
+    @keyframes shine{
+
+      0%{
+        background-position:0%;
+      }
+
+      100%{
+        background-position:300%;
+      }
+
     }
 
   `;
 
   scrollTo(id){
+
     document.getElementById(id).scrollIntoView({
       behavior:"smooth"
     });
+
   }
 
   render(){
+
     return html`
 
       <nav>
 
-        <button @click=${()=>this.scrollTo("home")}>Home</button>
+        <button @click=${()=>this.scrollTo("home")}>
+          Home
+        </button>
 
         <button @click=${()=>this.scrollTo("reseaux")}>
           Réseaux
@@ -63,6 +97,7 @@ export class CartoonNavbar extends LitElement {
 
     `;
   }
+
 }
 
 customElements.define("cartoon-navbar", CartoonNavbar);
