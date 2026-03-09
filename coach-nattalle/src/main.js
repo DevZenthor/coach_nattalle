@@ -1,6 +1,7 @@
 import { LitElement, css, html } from 'lit'
 import litLogo from './assets/lit.svg'
 import viteLogo from '/vite.svg'
+import nattallelogo from '/NATTALLE.svg'
 import "./style.css";
 import "./cartoon-background.js";
 import "./cartoon-navbar.js";
