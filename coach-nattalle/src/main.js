@@ -6,6 +6,7 @@ import "./cartoon-background.js";
 import "./cartoon-navbar.js";
 import "./home-section.js";
 import "./reseaux-section.js";
+import "./experience-section.js";
 
 /**
  * An example element.
