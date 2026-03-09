@@ -20,6 +20,8 @@ export class ReseauxSection extends LitElement {
     .icons{
       display:flex;
       gap:60px;
+      flex-wrap:wrap;
+      justify-content:center;
     }
 
     a{
@@ -79,9 +81,7 @@ export class ReseauxSection extends LitElement {
         <a href="https://discord.gg/tondiscord" target="_blank">
 
           <svg viewBox="0 0 127.14 96.36">
-
             <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83,97.68,97.68,0,0,0-29.1,0A72.37,72.37,0,0,0,45.65,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21A105.73,105.73,0,0,0,32.71,96.36a77.7,77.7,0,0,0,6.61-10.85A68.42,68.42,0,0,1,29.27,80c.84-.62,1.65-1.26,2.43-1.92A75.5,75.5,0,0,0,97.46,78c.79.66,1.6,1.3,2.43,1.92a68.68,68.68,0,0,1-10.06,5.51,77.66,77.66,0,0,0,6.61,10.85,105.25,105.25,0,0,0,32.19-16.15C130.52,59.28,124.64,35.48,107.7,8.07Z"/>
-
           </svg>
 
           <span class="label">Discord</span>
@@ -89,14 +89,12 @@ export class ReseauxSection extends LitElement {
         </a>
 
 
-        <!-- X (TWITTER) NATTALLE -->
+        <!-- X NATTALLE -->
 
         <a href="https://x.com/CoachNattalle" target="_blank">
 
           <svg viewBox="0 0 24 24">
-
             <path d="M18.244 2H21.5l-7.45 8.52L22 22h-6.828l-5.35-7.002L3.73 22H.472l7.97-9.114L2 2h6.828l4.84 6.36L18.244 2zm-1.2 18h1.8L7.62 4h-1.8l11.224 16z"/>
-
           </svg>
 
           <span class="label">Coach Nattalle</span>
@@ -104,17 +102,33 @@ export class ReseauxSection extends LitElement {
         </a>
 
 
-        <!-- X (TWITTER) MANAGER -->
+        <!-- X MANAGER -->
 
         <a href="https://x.com/zenthor1480" target="_blank">
 
           <svg viewBox="0 0 24 24">
-
             <path d="M18.244 2H21.5l-7.45 8.52L22 22h-6.828l-5.35-7.002L3.73 22H.472l7.97-9.114L2 2h6.828l4.84 6.36L18.244 2zm-1.2 18h1.8L7.62 4h-1.8l11.224 16z"/>
-
           </svg>
 
           <span class="label">Manager</span>
+
+        </a>
+
+
+        <!-- TWITCH -->
+
+        <a href="https://www.twitch.tv/nattalle_gaming" target="_blank">
+
+          <svg viewBox="0 0 24 24">
+
+            <path d="M4 2L2 6v14h6v2h2l2-2h3l5-5V2H4zm14 12l-3 3h-3l-2 2v-2H4V4h14v10z"/>
+
+            <rect x="9" y="7" width="2" height="5"/>
+            <rect x="13" y="7" width="2" height="5"/>
+
+          </svg>
+
+          <span class="label">Twitch</span>
 
         </a>
 
