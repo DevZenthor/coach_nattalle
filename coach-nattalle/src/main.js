@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import "./style.css";
 import "./cartoon-background.js";
 import "./cartoon-navbar.js";
+import "./home-section.js";
 
 /**
  * An example element.
